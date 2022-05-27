@@ -212,7 +212,9 @@ export default function Home() {
                 justifyContent: 'center',
               }}
             >
-              DR. NWANNE BRYAN EZEAKA<span style={{ color: 'rgb(135, 35, 138)' }}>&nbsp;|&nbsp;</span> The Dev Medic
+              DR. NWANNE BRYAN EZEAKA
+              <span style={{ color: '#e809dd' }}>&nbsp;|&nbsp;</span> The Dev
+              Medic
             </Typography>
             <Typography component='h1' variant='h1' style={{ margin: 0 }}>
               TECH STACK
