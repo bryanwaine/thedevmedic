@@ -230,7 +230,7 @@ export default function Home() {
           </div>
           <Grid
             container
-            spacing={2}
+            spacing={0}
             sx={{
               display: 'flex',
               justifyContent: 'center',
