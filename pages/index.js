@@ -206,7 +206,7 @@ export default function Home() {
             <Typography
               variant='h5'
               sx={{
-                margin: '2rem 0 2rem 0',
+                margin: '2rem 0 4rem 0',
                 width: '100%',
                 display: 'flex',
                 justifyContent: 'center',
