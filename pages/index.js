@@ -114,7 +114,7 @@ export default function Home() {
                     <Typography
                       variant='h1'
                       sx={{
-                        fontSize: { xs: '2rem', lg: '5rem' },
+                        fontSize: { xs: '1.5rem', lg: '5rem' },
                         fontWeight: '300',
                         background: 'transparent',
                       }}
@@ -167,7 +167,7 @@ export default function Home() {
                     <Typography
                       variant='h1'
                       sx={{
-                        fontSize: { xs: '2rem', lg: '5rem' },
+                        fontSize: { xs: '1.5rem', lg: '5rem' },
                         fontWeight: '800',
                       }}
                     >{`Medic`}</Typography>
