@@ -204,7 +204,7 @@ export default function Home() {
             }}
           >
             <Typography
-              variant='h2'
+              variant='h5'
               sx={{
                 margin: '2rem 0 1rem 0',
                 width: '100%',
@@ -212,7 +212,7 @@ export default function Home() {
                 justifyContent: 'center',
               }}
             >
-              DR. NWANNE BRYAN EZEAKA
+              DR. NWANNE BRYAN EZEAKA | The Dev Medic
             </Typography>
             <Typography component='h1' variant='h1' style={{ margin: 0 }}>
               TECH STACK
