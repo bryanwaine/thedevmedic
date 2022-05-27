@@ -55,7 +55,7 @@ export default function Home() {
     try {
       setLoading(true);
       const { data } = await axios.post(
-        'https://formsubmit.co/1c99fe8591d605276f8823e16f35d43a',
+        'https://formsubmit.co/waine.bryan@gmail.com',
         {
           name,
           email,
