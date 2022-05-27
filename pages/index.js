@@ -175,6 +175,7 @@ export default function Home() {
                       flex: 1,
                       cursor: 'pointer',
                     }}
+                    className='revealMedic'
                   >
                     <Typography
                       variant='h1'
@@ -230,6 +231,7 @@ export default function Home() {
                       flex: 1,
                       cursor: 'pointer',
                     }}
+                    className='revealDev'
                   >
                     <Typography
                       variant='h1'

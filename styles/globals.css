@@ -16,12 +16,12 @@ a {
 }
 
 .revealDev {
-  transform: translateY(-300px);
+  transform: translateY(-200px);
   opacity: 0;
   transition: 2s all ease;
 }
 .revealMedic {
-  transform: translateY(300px);
+  transform: translateY(200px);
   opacity: 0;
   transition: 2s all ease;
 }
@@ -110,7 +110,7 @@ a {
 .revealMedic {
   transform: translateY(0px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 4s all ease;
 }
 .revealDev.active {
   transform: translateY(0);
