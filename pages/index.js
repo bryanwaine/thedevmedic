@@ -307,7 +307,7 @@ export default function Home() {
               }}
             >
               <img
-                src='/Node.png'
+                src='/node.png'
                 alt='Node.js'
                 style={{ width: `5rem`, height: `5rem` }}
               />
@@ -324,8 +324,8 @@ export default function Home() {
               }}
             >
               <img
-                src='/React.png'
-                alt='Reatc.js'
+                src='/react.png'
+                alt='React.js'
                 style={{ width: `5rem`, height: `5rem` }}
               />
             </Grid>
@@ -453,7 +453,7 @@ export default function Home() {
               }}
             >
               <img
-                src='/Git.png'
+                src='/git.png'
                 alt='Git'
                 style={{ width: `5rem`, height: `5rem` }}
               />
