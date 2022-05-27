@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import {
   AppBar,
@@ -27,7 +27,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
-const Layout = ({ description, title, children, selectedAbout, selectedPortfolio }) => {
+const Layout = ({ description, title, children, selectedAbout, selectedPortfolio, selectedContact }) => {
   let theme = createTheme({
     typography: {
       h1: {
@@ -82,6 +82,7 @@ const Layout = ({ description, title, children, selectedAbout, selectedPortfolio
     setMenuOpen(!menuOpen);
     setMenuVisible(!menuVisible);
   };
+
 
   return (
     <Box>
@@ -188,7 +189,7 @@ const Layout = ({ description, title, children, selectedAbout, selectedPortfolio
                     variant='h5'
                     sx={{
                       cursor: 'pointer',
-                      color: '#666666',
+                      color: selectedContact === 'selectedContact' ? '#ffffff' : '#666666',
                       ':hover': {
                         color: '#ffffff',
                       },
@@ -325,7 +326,7 @@ const Layout = ({ description, title, children, selectedAbout, selectedPortfolio
                     variant='h5'
                     sx={{
                       cursor: 'pointer',
-                      color: '#666666',
+                      color: selectedContact ? '#ffffff' : '#666666',
                       ':hover': {
                         color: '#ffffff',
                       },

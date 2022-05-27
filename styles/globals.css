@@ -14,3 +14,175 @@ a {
   box-sizing: border-box !important;
   font-family: 'Poppins' !important;
 }
+
+.revealDev {
+  transform: translateY(-300px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealMedic {
+  transform: translateY(300px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealDev.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.revealMedic.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.revealTechStack {
+  transform: translateX(50px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealTechStack.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.revealAboutTopLeft {
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealAboutTopLeft.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.revealAboutTopRight {
+  transform: translateX(200px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealAboutTopRight.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.revealAboutLeft {
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealAboutLeft.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.revealAboutRight {
+  transform: translateX(200px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealAboutRight.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.revealAboutBottomLeft {
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealAboutBottomLeft.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.revealAboutBottomRight {
+  transform: translateX(200px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealAboutBottomRight.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .revealDev {
+  transform: translateY(0px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealMedic {
+  transform: translateY(0px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealDev.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.revealMedic.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.revealTechStack {
+  transform: translateX(0px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealTechStack.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.revealAboutTopLeft {
+  transform: translateX(0px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealAboutTopLeft.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.revealAboutTopRight {
+  transform: translateX(0px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealAboutTopRight.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.revealAboutLeft {
+  transform: translateX(0px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealAboutLeft.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.revealAboutRight {
+  transform: translateX(0px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealAboutRight.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.revealAboutBottomLeft {
+  transform: translateX(0px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealAboutBottomLeft.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.revealAboutBottomRight {
+  transform: translateX(0px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.revealAboutBottomRight.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+}

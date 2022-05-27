@@ -22,17 +22,17 @@ import MailIcon from '@mui/icons-material/Mail';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 import MessageIcon from '@mui/icons-material/Message';
-import { Spring } from 'react-spring';
 import axios from 'axios';
 import { useSnackbar } from 'notistack';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import NextLink from 'next/link';
 
 export default function Home() {
-  const { enqueueSnackbar, closeSnackbar } = useSnackbar();
+  const { enqueueSnackbar } = useSnackbar();
   const router = useRouter();
   const [loading, setLoading] = useState(false);
+  const [selectedContact, setSelectedContact] = useState('');
 
   const validationSchema = Yup.object().shape({
     name: Yup.string().required('Name is required').min(2, 'Name is not valid'),
@@ -52,6 +52,7 @@ export default function Home() {
   } = useForm(formOptions);
 
   const submitHandler = async ({ name, email, textarea }) => {
+    console.log(router.query);
     try {
       setLoading(true);
       const { data } = await axios.post(
@@ -73,25 +74,89 @@ export default function Home() {
     } catch (err) {
       enqueueSnackbar(err.message, {
         variant: 'error',
-      });      
+      });
       setLoading(false);
     }
   };
 
+  function revealDev() {
+    var reveals = document.querySelectorAll('.revealDev');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+  function revealMedic() {
+    var reveals = document.querySelectorAll('.revealMedic');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+  function revealTechStack() {
+    var reveals = document.querySelectorAll('.revealTechStack');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = -250;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+  const navActive = () => {
+     var reveals = document.querySelectorAll('.contact');
+     for (var i = 0; i < reveals.length; i++) {
+       var windowHeight = window.innerHeight;
+       var elementTop = reveals[i].getBoundingClientRect().top;
+       var elementVisible = 500;
+       if (elementTop < windowHeight - elementVisible) {
+         setSelectedContact('selectedContact')
+       } else {
+         setSelectedContact('');
+       }
+     }
+  };
+
+  useEffect(() => {
+    revealDev();
+    revealMedic();
+
+    window.addEventListener('scroll', () => {
+      revealTechStack();
+      navActive();
+    });
+  }, []);
+
   return (
-    <Layout sx={{ width: '100%' }} title='Home'>
+    <Layout
+      sx={{ width: '100%' }}
+      title='Home'
+      selectedContact={selectedContact}
+    >
       <Grid
         container
         spacing={0}
         style={{ display: 'flex', justifyContent: 'center', zIndex: -1 }}
       >
         <Grid items md={12} xs={12}>
-          <Spring
-            from={{ opacity: 0, marginLeft: -200 }}
-            to={{ opacity: 1, marginLeft: 0 }}
-          >
-            {(props) => <div style={props}></div>}
-          </Spring>
           <div
             raised={true}
             style={{ width: '100%', padding: '6rem 0.5rem 0' }}
@@ -140,6 +205,7 @@ export default function Home() {
                     height={700}
                     alt='software developer'
                     style={{ borderRadius: '0 0 0 250px ' }}
+                    className='revealDev'
                   />
                 </Box>
                 <Box>
@@ -149,6 +215,7 @@ export default function Home() {
                     height={700}
                     alt='medical doctor'
                     style={{ borderRadius: '0 0 200px 0 ' }}
+                    className='revealMedic'
                   />
                 </Box>
                 <NextLink href='/about' passHref>
@@ -216,6 +283,9 @@ export default function Home() {
               <span style={{ color: '#e809dd' }}>&nbsp;|&nbsp;</span> The Dev
               Medic
             </Typography>
+
+            {/* Tech Stack */}
+
             <Typography component='h1' variant='h1' style={{ margin: 0 }}>
               TECH STACK
             </Typography>
@@ -238,6 +308,7 @@ export default function Home() {
               justifyContent: 'center',
               margin: '2rem 0 0 0',
             }}
+            className='revealTechStack'
           >
             <Grid
               item
@@ -461,8 +532,8 @@ export default function Home() {
               />
             </Grid>
           </Grid>
-          <Box id='contact' />
-          <Box sx={{ height: '2rem', display: { xs: 'flex', lg: 'none' } }} />
+          <div className='contact' id='contact' />
+          <Box sx={{ height: '2rem' }} />
         </Grid>
         <Grid
           item

@@ -1,6 +1,6 @@
 import { Card, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
 import Image from 'next/image';
 import bryan from '/public/bryan.jpg';
@@ -8,6 +8,103 @@ import doctor from '/public/doctor.jpg';
 import developer from '/public/developer.jpg';
 
 const About = () => {
+
+  function revealAboutTopLeft() {
+    var reveals = document.querySelectorAll('.revealAboutTopLeft');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = -250;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+    function revealAboutTopRight() {
+      var reveals = document.querySelectorAll('.revealAboutTopRight');
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = -250;
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+
+  function revealAboutLeft() {
+    var reveals = document.querySelectorAll('.revealAboutLeft');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 200;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+  function revealAboutRight() {
+    var reveals = document.querySelectorAll('.revealAboutRight');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 200;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+  function revealAboutBottomLeft() {
+    var reveals = document.querySelectorAll('.revealAboutBottomLeft');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 250;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+  function revealAboutBottomRight() {
+    var reveals = document.querySelectorAll('.revealAboutBottomRight');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 250;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+   useEffect(() => {
+       revealAboutTopLeft();
+       revealAboutTopRight();
+
+     window.addEventListener('scroll', () => {
+       revealAboutLeft();
+       revealAboutRight();       
+       revealAboutBottomLeft();
+       revealAboutBottomRight();
+     });
+   }, []);
+
   return (
     <Layout title='About me' selectedAbout>
       <div
@@ -27,7 +124,7 @@ const About = () => {
             padding: { xs: '8rem 2rem', lg: '8rem 10rem' },
           }}
         >
-          <Box sx={{ flex: 1 }}>
+          <Box sx={{ flex: 1 }} className='revealAboutTopLeft'>
             <div
               style={{
                 display: 'flex',
@@ -86,6 +183,7 @@ const About = () => {
               alignItems: 'center',
               padding: '1rem 0',
             }}
+            className='revealAboutTopRight'
           >
             <Image
               src={bryan}
@@ -128,6 +226,7 @@ const About = () => {
               alignItems: 'center',
               padding: '1rem 0',
             }}
+            className='revealAboutLeft'
           >
             <Image
               src={doctor}
@@ -145,7 +244,7 @@ const About = () => {
               }}
             />
           </Box>
-          <Box sx={{ flex: 1 }}>
+          <Box sx={{ flex: 1 }} className='revealAboutRight'>
             <div
               style={{
                 display: 'flex',
@@ -206,7 +305,7 @@ const About = () => {
             padding: { xs: '8rem 2rem', lg: '8rem 10rem' },
           }}
         >
-          <Box sx={{ flex: 1 }}>
+          <Box sx={{ flex: 1 }} className='revealAboutBottomLeft'>
             <div
               style={{
                 display: 'flex',
@@ -265,6 +364,7 @@ const About = () => {
               alignItems: 'center',
               padding: '1rem 0',
             }}
+            className='revealAboutBottomRight'
           >
             <Image
               src={developer}
@@ -276,7 +376,7 @@ const About = () => {
             <Box
               sx={{
                 boxShadow: '0px 0px 15px 4px rgba(0,0,0,0.50)  !important',
-                width:{xs: '10rem', lg: '20rem'},
+                width: { xs: '10rem', lg: '20rem' },
                 height: '0px',
                 margin: '2rem 0 0 0',
               }}
