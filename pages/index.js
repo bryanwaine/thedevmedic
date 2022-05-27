@@ -460,7 +460,7 @@ export default function Home() {
             </Grid>
           </Grid>
           <Box id='contact' />
-          <Box sx={{ height: '5rem', display: { xs: 'flex', lg: 'none' } }} />
+          <Box sx={{ height: '2rem', display: { xs: 'flex', lg: 'none' } }} />
         </Grid>
         <Grid
           item
