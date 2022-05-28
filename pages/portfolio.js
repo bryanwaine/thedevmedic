@@ -380,7 +380,7 @@ const Portfolio = () => {
                     sx={{
                       display: { xs: 'initial', lg: 'none' },
                       background: '#1d2124',
-                      height: '10rem',
+                      height: '44rem',
                       width: '3%',
                     }}
                   />
@@ -403,6 +403,14 @@ const Portfolio = () => {
                       width: '3%',
                     }}
                   />
+                  <Box
+                    sx={{
+                      display: { xs: 'initial', lg: 'none' },
+                      background: '#1d2124',
+                      height: '32rem',
+                      width: '3%',
+                    }}
+                  />
                   <img
                     src='/phs.png'
                     alt='PHS Website'
@@ -419,6 +427,14 @@ const Portfolio = () => {
                     sx={{
                       background: '#1d2124',
                       height: '46rem',
+                      width: '3%',
+                    }}
+                  />
+                  <Box
+                    sx={{
+                      display: { xs: 'initial', lg: 'none' },
+                      background: '#1d2124',
+                      height: '28rem',
                       width: '3%',
                     }}
                   />
@@ -441,6 +457,14 @@ const Portfolio = () => {
                       width: '3%',
                     }}
                   />
+                  <Box
+                    sx={{
+                      display: { xs: 'initial', lg: 'none' },
+                      background: '#1d2124',
+                      height: '32rem',
+                      width: '3%',
+                    }}
+                  />
                   <img
                     src='/chat.png'
                     alt='Chat Rooms'
@@ -457,6 +481,14 @@ const Portfolio = () => {
                     sx={{
                       background: '#1d2124',
                       height: '55rem',
+                      width: '3%',
+                    }}
+                  />
+                  <Box
+                    sx={{
+                      display: { xs: 'initial', lg: 'none' },
+                      background: '#1d2124',
+                      height: '30rem',
                       width: '3%',
                     }}
                   />
@@ -479,7 +511,7 @@ const Portfolio = () => {
             >
               {/*Ahia Screen Section */}
 
-              <Box sx={{ height: '50rem', width: '80%' }}>
+              <Box sx={{ height: { xs: '40rem', lg: '50rem' }, width: '80%' }}>
                 <Typography
                   variant='h3'
                   sx={{
@@ -501,6 +533,7 @@ const Portfolio = () => {
                     flex: 'center',
                     flexDirection: 'column',
                     alignItems: 'start',
+                    margin: { xs: '-5rem 0 0 0', lg: 0 },
                   }}
                 >
                   <img
@@ -527,7 +560,7 @@ const Portfolio = () => {
                   height: '50rem',
                   width: '80%',
                   display: { xs: 'initial', lg: 'none' },
-                  margin: '0 0 4rem 0'
+                  margin: '0 0 4rem 0',
                 }}
               >
                 <Card
@@ -598,9 +631,9 @@ const Portfolio = () => {
 
               <Box
                 sx={{
-                  height: '50rem',
+                  height: { xs: '40rem', lg: '50rem' },
                   width: '80%',
-                  display: { xs: 'initial', lg: 'none' }
+                  display: { xs: 'initial', lg: 'none' },
                 }}
               >
                 <Typography
@@ -624,6 +657,7 @@ const Portfolio = () => {
                     flex: 'center',
                     flexDirection: 'column',
                     alignItems: 'end',
+                    margin: { xs: '-5rem 0 0 0', lg: 0 },
                   }}
                 >
                   <img
@@ -645,7 +679,7 @@ const Portfolio = () => {
 
               {/* LMS Description Section */}
 
-              <Box sx={{ height: '50rem', width: '80%' }}>
+              <Box sx={{ height: { xs: '42rem', lg: '50rem' }, width: '80%' }}>
                 <Card
                   raised={true}
                   sx={{
@@ -654,7 +688,7 @@ const Portfolio = () => {
                     borderLeft: '5px solid #358163',
                     borderRadius: 2,
                     background: '#eeeeee',
-                    margin: '10rem 0 0 0',
+                    margin: { xs: '0', lg: '10rem 0 0 0' },
                     padding: '2rem',
                   }}
                 >
@@ -706,7 +740,7 @@ const Portfolio = () => {
 
               {/* PHS Website Screen */}
 
-              <Box sx={{ height: '50rem', width: '80%' }}>
+              <Box sx={{ height: { xs: '40rem', lg: '50rem' }, width: '80%' }}>
                 <Typography
                   variant='h3'
                   sx={{
@@ -728,6 +762,7 @@ const Portfolio = () => {
                     flex: 'center',
                     flexDirection: 'column',
                     alignItems: 'start',
+                    margin: { xs: '-5rem 0 0 0', lg: 0 },
                   }}
                 >
                   <img
@@ -747,9 +782,127 @@ const Portfolio = () => {
                 </Box>
               </Box>
 
+              {/* PHS Website Description Section on XS  */}
+
+              <Box
+                sx={{
+                  height: { xs: '38rem', lg: '50rem' },
+                  width: '80%',
+                  display: { xs: 'initial', lg: 'none' },
+                }}
+              >
+                <Card
+                  raised={true}
+                  sx={{
+                    width: '100%',
+                    minHeight: '20rem',
+                    borderLeft: '5px solid #358163',
+                    borderRadius: 2,
+                    margin: { xs: 0, lg: '10rem 0 0 0' },
+                    padding: '2rem',
+                  }}
+                >
+                  <Typography variant='h2' sx={{ fontWeight: 'bold' }}>
+                    PHS Website
+                  </Typography>
+                  <Typography variant='h5' sx={{ margin: '0' }}>
+                    A official website
+                  </Typography>
+                  <Box
+                    sx={{
+                      height: '.3rem',
+                      width: { xs: '50%', lg: '30%' },
+                      borderRadius: 20,
+                      backgroundImage:
+                        'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
+                      marginTop: 1,
+                    }}
+                  />
+
+                  <Typography variant='h6' sx={{}}>
+                    PHS website is an official website for an institution built
+                    using <strong>Next.js</strong> with{' '}
+                    <strong>React.js</strong> powering the front end,&nbsp;
+                    <strong>Node.js</strong>&nbsp; serving the backend and{' '}
+                    <strong>MongoDB</strong> providing the database storage.{' '}
+                    <strong>Material UI</strong> was used to create a beautiful
+                    and responsive user interface for a seamless user
+                    experience.
+                    <br />
+                    <br />
+                    The application offers a beautiful homepage and ease of
+                    navigation with a responsive layout.
+                  </Typography>
+                  <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <Button
+                      variant='contained'
+                      color='primary'
+                      type='submit'
+                      sx={{
+                        backgroundImage:
+                          'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
+                      }}
+                      onClick={() => router.push('https://ahia.vercel.app')}
+                    >
+                      VISIT WEBSITE
+                    </Button>
+                  </div>
+                </Card>
+              </Box>
+
+              {/* Quick Weather Screen Section on XS*/}
+
+              <Box
+                sx={{
+                  height: { xs: '30rem', lg: '50rem' },
+                  width: '80%',
+                  display: { xs: 'initial', lg: 'none' },
+                }}
+              >
+                <Typography
+                  variant='h3'
+                  sx={{
+                    width: '100%',
+                    height: '8rem',
+                    display: 'flex',
+                    justifyContent: 'start',
+                    alignItems: 'start',
+                    padding: '0',
+                    fontWeight: 700,
+                    color: '#666666',
+                  }}
+                >
+                  Sep, 2021
+                </Typography>
+                <Box
+                  sx={{
+                    display: 'flex',
+                    flex: 'center',
+                    flexDirection: 'column',
+                    alignItems: 'end',
+                    margin: { xs: '-5rem 0 0 0', lg: 'none' },
+                  }}
+                >
+                  <img
+                    src='/weather_screen.png'
+                    alt='Quick Weather'
+                    style={{ width: '15rem', height: '30rem' }}
+                  />
+                  <Box
+                    sx={{
+                      boxShadow:
+                        '0px 0px 15px 4px rgba(0,0,0,0.50)  !important',
+                      width: '10rem',
+                      height: '0px',
+                      margin: '2rem 2.5rem 0 0',
+                    }}
+                  />
+                </Box>
+              </Box>
+
               {/* Quick Weather Description Section */}
 
-              <Box sx={{ height: '50rem', width: '80%' }}>
+              <Box sx={{ height: { xs: '52rem', lg: '50rem' }, width: '80%' }}>
                 <Card
                   raised={true}
                   sx={{
@@ -812,7 +965,7 @@ const Portfolio = () => {
 
               {/* Chat Rooms Screen Section */}
 
-              <Box sx={{ height: '50rem', width: '80%' }}>
+              <Box sx={{ height: { xs: '40rem', lg: '50rem' }, width: '80%' }}>
                 <Typography
                   variant='h3'
                   sx={{
@@ -834,6 +987,7 @@ const Portfolio = () => {
                     flex: 'center',
                     flexDirection: 'column',
                     alignItems: 'start',
+                    margin: { xs: '-5rem 0 0 0', lg: 0 },
                   }}
                 >
                   <img
@@ -851,6 +1005,75 @@ const Portfolio = () => {
                     }}
                   />
                 </Box>
+              </Box>
+
+              {/* Chat Rooms Description Section on XS */}
+
+              <Box
+                sx={{
+                  height: { xs: '40rem', lg: '50rem' },
+                  width: '80%',
+                  display: { xs: 'initial', lg: 'none' },
+                }}
+              >
+                <Card
+                  raised={true}
+                  sx={{
+                    width: '100%',
+                    minHeight: '20rem',
+                    borderLeft: '5px solid #333744',
+                    borderRadius: 2,
+                    margin: { xs: 0, lg: '10rem 0 0 0' },
+                    padding: '2rem',
+                  }}
+                >
+                  <Typography variant='h2' sx={{ fontWeight: 'bold' }}>
+                    Chat Rooms
+                  </Typography>
+                  <Typography variant='h5' sx={{ margin: '0' }}>
+                    A Real-Time Chat Application
+                  </Typography>
+                  <Box
+                    sx={{
+                      height: '.3rem',
+                      width: { xs: '50%', lg: '30%' },
+                      borderRadius: 20,
+                      backgroundImage:
+                        'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
+                      marginTop: 1,
+                    }}
+                  />
+
+                  <Typography variant='h6' sx={{}}>
+                    Chat Rooms is an instant messaging application built using
+                    vanilla <strong>JavaScript</strong> for the front end and{' '}
+                    <strong>Node.js</strong> and <strong>Express</strong> for
+                    the backend server. It utilizes&nbsp;
+                    <strong>Socket.io</strong> to provide a connection for
+                    sending real-time messages between connected users.
+                    <br />
+                    <br />
+                    The application allows users to enter any chat room of thier
+                    choice and send messages to other users in the same room as
+                    they are. This messages are delivered in real-time.
+                  </Typography>
+                  <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <Button
+                      variant='contained'
+                      color='primary'
+                      type='submit'
+                      sx={{
+                        backgroundImage:
+                          'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
+                      }}
+                      onClick={() =>
+                        router.push('http://bryan-chat-rooms.herokuapp.com')
+                      }
+                    >
+                      VISIT WEBSITE
+                    </Button>
+                  </div>
+                </Card>
               </Box>
             </Grid>
           </Grid>

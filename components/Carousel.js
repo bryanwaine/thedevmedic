@@ -12,9 +12,9 @@ const ImageCarousel = () => {
       showIndicators={false}
       showStatus={false}
       autoPlay={true}
-      interval={10000}
+      interval={5000}
       swipeable={true}
-      transitionTime={5000}
+      transitionTime={2000}
     >
       <div
         style={{
