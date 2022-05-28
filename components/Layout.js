@@ -28,7 +28,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import DownloadIcon from '@mui/icons-material/Download';
 
-const Layout = ({ description, title, children, selectedAbout, selectedPortfolio, selectedContact }) => {
+const Layout = ({
+  description,
+  title,
+  children,
+  selectedAbout,
+  selectedPortfolio,
+  selectedContact,
+}) => {
   let theme = createTheme({
     typography: {
       h1: {
@@ -83,7 +90,6 @@ const Layout = ({ description, title, children, selectedAbout, selectedPortfolio
     setMenuOpen(!menuOpen);
     setMenuVisible(!menuVisible);
   };
-
 
   return (
     <Box>
@@ -190,7 +196,10 @@ const Layout = ({ description, title, children, selectedAbout, selectedPortfolio
                     variant='h5'
                     sx={{
                       cursor: 'pointer',
-                      color: selectedContact === 'selectedContact' ? '#ffffff' : '#666666',
+                      color:
+                        selectedContact === 'selectedContact'
+                          ? '#ffffff'
+                          : '#666666',
                       ':hover': {
                         color: '#ffffff',
                       },
@@ -361,13 +370,25 @@ const Layout = ({ description, title, children, selectedAbout, selectedPortfolio
                 flexDirection: { xs: 'column', lg: 'row' },
               }}
             >
-              <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', color: '#aaaaaa', ':hover': {
-                color: '#ffffff'
-              }}} onClick={() => router.push('https://pdfhost.io/v/OKIagqlpz_Nwannes_Resume')}>
-                <Typography variant='h5'>
-                  DOWNLOAD MY RESUME&nbsp;
-                </Typography>
-                <DownloadIcon/>
+              <Box
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  cursor: 'pointer',
+                  color: '#aaaaaa',
+                  ':hover': {
+                    color: '#ffffff',
+                  },
+                }}
+              >
+                <NextLink
+                  href='https://pdfhost.io/v/OKIagqlpz_Nwannes_Resume'
+                  passHref
+                >
+                  <Typography variant='h5'>DOWNLOAD MY RESUME&nbsp;</Typography>
+                </NextLink>
+                <DownloadIcon />
               </Box>
               <Box>
                 <Typography variant='h6'>
