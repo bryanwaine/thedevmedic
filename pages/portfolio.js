@@ -11,7 +11,7 @@ import ImageCarousel from '../components/Carousel';
 const Portfolio = () => {
   const router = useRouter();
 
- function revealPortfolioImg1() {
+  function revealPortfolioImg1() {
     var reveals = document.querySelectorAll('.revealPortfolioImg1');
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
@@ -24,7 +24,7 @@ const Portfolio = () => {
       }
     }
   }
-  
+
   function revealPortfolioDesc1() {
     var reveals = document.querySelectorAll('.revealPortfolioDesc1');
     for (var i = 0; i < reveals.length; i++) {
@@ -39,7 +39,7 @@ const Portfolio = () => {
     }
   }
 
- function revealPortfolioImg2() {
+  function revealPortfolioImg2() {
     var reveals = document.querySelectorAll('.revealPortfolioImg2');
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
@@ -67,7 +67,7 @@ const Portfolio = () => {
     }
   }
 
- function revealPortfolioImg3() {
+  function revealPortfolioImg3() {
     var reveals = document.querySelectorAll('.revealPortfolioImg3');
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
@@ -95,7 +95,7 @@ const Portfolio = () => {
     }
   }
 
- function revealPortfolioImg4() {
+  function revealPortfolioImg4() {
     var reveals = document.querySelectorAll('.revealPortfolioImg4');
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
@@ -123,7 +123,7 @@ const Portfolio = () => {
     }
   }
 
- function revealPortfolioImg5() {
+  function revealPortfolioImg5() {
     var reveals = document.querySelectorAll('.revealPortfolioImg5');
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
@@ -150,8 +150,6 @@ const Portfolio = () => {
       }
     }
   }
-
- 
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -259,18 +257,23 @@ const Portfolio = () => {
                     manage products and update order tracking.
                   </Typography>
                   <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <Button
-                      variant='contained'
-                      color='primary'
-                      type='submit'
-                      sx={{
-                        backgroundImage:
-                          'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
-                      }}
-                      onClick={() => router.push('https://ahia.vercel.app')}
+                    <a
+                      href='https://ahia.vercel.app'
+                      target='_blank'
+                      rel='noreferrer'
                     >
-                      VISIT WEBSITE
-                    </Button>
+                      <Button
+                        variant='contained'
+                        color='primary'
+                        type='submit'
+                        sx={{
+                          backgroundImage:
+                            'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
+                        }}
+                      >
+                        VISIT WEBSITE
+                      </Button>
+                    </a>
                   </div>
                 </Card>
               </Box>
@@ -370,18 +373,23 @@ const Portfolio = () => {
                     navigation with a responsive layout.
                   </Typography>
                   <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <Button
-                      variant='contained'
-                      color='primary'
-                      type='submit'
-                      sx={{
-                        backgroundImage:
-                          'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
-                      }}
-                      onClick={() => router.push('https://ahia.vercel.app')}
+                    <a
+                      href='https://phs-website.vercel.app'
+                      target='_blank'
+                      rel='noreferrer'
                     >
-                      VISIT WEBSITE
-                    </Button>
+                      <Button
+                        variant='contained'
+                        color='primary'
+                        type='submit'
+                        sx={{
+                          backgroundImage:
+                            'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
+                        }}
+                      >
+                        VISIT WEBSITE
+                      </Button>
+                    </a>
                   </div>
                 </Card>
               </Box>
@@ -480,20 +488,23 @@ const Portfolio = () => {
                     they are. This messages are delivered in real-time.
                   </Typography>
                   <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <Button
-                      variant='contained'
-                      color='primary'
-                      type='submit'
-                      sx={{
-                        backgroundImage:
-                          'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
-                      }}
-                      onClick={() =>
-                        router.push('http://bryan-chat-rooms.herokuapp.com')
-                      }
+                    <a
+                      href='http://bryan-chat-rooms.herokuapp.com'
+                      target='_blank'
+                      rel='noreferrer'
                     >
-                      VISIT WEBSITE
-                    </Button>
+                      <Button
+                        variant='contained'
+                        color='primary'
+                        type='submit'
+                        sx={{
+                          backgroundImage:
+                            'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
+                        }}
+                      >
+                        VISIT WEBSITE
+                      </Button>
+                    </a>
                   </div>
                 </Card>
               </Box>
@@ -788,18 +799,23 @@ const Portfolio = () => {
                     manage products and update order tracking.
                   </Typography>
                   <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <Button
-                      variant='contained'
-                      color='primary'
-                      type='submit'
-                      sx={{
-                        backgroundImage:
-                          'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
-                      }}
-                      onClick={() => router.push('https://ahia.vercel.app')}
+                    <a
+                      href='https://ahia.vercel.app'
+                      target='_blank'
+                      rel='noreferrer'
                     >
-                      VISIT WEBSITE
-                    </Button>
+                      <Button
+                        variant='contained'
+                        color='primary'
+                        type='submit'
+                        sx={{
+                          backgroundImage:
+                            'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
+                        }}
+                      >
+                        VISIT WEBSITE
+                      </Button>
+                    </a>
                   </div>
                 </Card>
               </Box>
@@ -903,18 +919,23 @@ const Portfolio = () => {
                     courses, users, and sales.
                   </Typography>
                   <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <Button
-                      variant='contained'
-                      color='primary'
-                      type='submit'
-                      sx={{
-                        backgroundImage:
-                          'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
-                      }}
-                      onClick={() => router.push('https://phslearn.com')}
+                    <a
+                      href='https://phslearn.com'
+                      target='_blank'
+                      rel='noreferrer'
                     >
-                      VISIT WEBSITE
-                    </Button>
+                      <Button
+                        variant='contained'
+                        color='primary'
+                        type='submit'
+                        sx={{
+                          backgroundImage:
+                            'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
+                        }}
+                      >
+                        VISIT WEBSITE
+                      </Button>
+                    </a>
                   </div>
                 </Card>
               </Box>
@@ -1019,18 +1040,23 @@ const Portfolio = () => {
                     navigation with a responsive layout.
                   </Typography>
                   <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <Button
-                      variant='contained'
-                      color='primary'
-                      type='submit'
-                      sx={{
-                        backgroundImage:
-                          'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
-                      }}
-                      onClick={() => router.push('https://ahia.vercel.app')}
+                    <a
+                      href='https://phs-website.vercel.app'
+                      target='_blank'
+                      rel='noreferrer'
                     >
-                      VISIT WEBSITE
-                    </Button>
+                      <Button
+                        variant='contained'
+                        color='primary'
+                        type='submit'
+                        sx={{
+                          backgroundImage:
+                            'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
+                        }}
+                      >
+                        VISIT WEBSITE
+                      </Button>
+                    </a>
                   </div>
                 </Card>
               </Box>
@@ -1125,8 +1151,8 @@ const Portfolio = () => {
                     using vanilla <strong>JavaScript</strong> for the front end
                     and <strong>Node.js</strong> and <strong>Express</strong>{' '}
                     for the backend server. It utilizes Weather and Mapbox{' '}
-                    <strong>APIs</strong> to provide the current weather forecast
-                    for any location around the world
+                    <strong>APIs</strong> to provide the current weather
+                    forecast for any location around the world
                     <br />
                     <br />
                     The application allows users to enter any location of their
@@ -1134,20 +1160,23 @@ const Portfolio = () => {
                     location including temperature and chance of rain.
                   </Typography>
                   <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <Button
-                      variant='contained'
-                      color='primary'
-                      type='submit'
-                      sx={{
-                        backgroundImage:
-                          'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
-                      }}
-                      onClick={() =>
-                        router.push('http://bryan-quick-weather.herokuapp.com')
-                      }
+                    <a
+                      href='http://bryan-quick-weather.herokuapp.com'
+                      target='_blank'
+                      rel='noreferrer'
                     >
-                      VISIT WEBSITE
-                    </Button>
+                      <Button
+                        variant='contained'
+                        color='primary'
+                        type='submit'
+                        sx={{
+                          backgroundImage:
+                            'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
+                        }}
+                      >
+                        VISIT WEBSITE
+                      </Button>
+                    </a>
                   </div>
                 </Card>
               </Box>
@@ -1251,20 +1280,23 @@ const Portfolio = () => {
                     they are. This messages are delivered in real-time.
                   </Typography>
                   <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <Button
-                      variant='contained'
-                      color='primary'
-                      type='submit'
-                      sx={{
-                        backgroundImage:
-                          'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
-                      }}
-                      onClick={() =>
-                        router.push('http://bryan-chat-rooms.herokuapp.com')
-                      }
+                    <a
+                      href='http://bryan-chat-rooms.herokuapp.com'
+                      target='_blank'
+                      rel='noreferrer'
                     >
-                      VISIT WEBSITE
-                    </Button>
+                      <Button
+                        variant='contained'
+                        color='primary'
+                        type='submit'
+                        sx={{
+                          backgroundImage:
+                            'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
+                        }}
+                      >
+                        VISIT WEBSITE
+                      </Button>
+                    </a>
                   </div>
                 </Card>
               </Box>
