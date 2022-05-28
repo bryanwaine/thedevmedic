@@ -385,10 +385,10 @@ const Layout = ({
                 <NextLink
                   href='https://pdfhost.io/v/OKIagqlpz_Nwannes_Resume'
                   passHref
-                >
+                ><DownloadIcon />
                   <Typography variant='h5'>DOWNLOAD MY RESUME&nbsp;</Typography>
                 </NextLink>
-                <DownloadIcon />
+                
               </Box>
               <Box>
                 <Typography variant='h6'>
