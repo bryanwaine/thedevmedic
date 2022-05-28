@@ -342,7 +342,7 @@ const Portfolio = () => {
                     PHS Website
                   </Typography>
                   <Typography variant='h5' sx={{ margin: '0' }}>
-                    A official website
+                    An official website
                   </Typography>
                   <Box
                     sx={{
@@ -891,7 +891,7 @@ const Portfolio = () => {
                   />
                   <Typography variant='h6' sx={{}}>
                     Port Health Services LMS is an online learning management
-                    system built upon the <strong>WordPresss</strong> platform.
+                    system built upon the <strong>WordPress</strong> platform.
                     It sports a user-friendly interface with seamless
                     responsiveness and ease of navigation.
                     <br />
@@ -991,7 +991,7 @@ const Portfolio = () => {
                     PHS Website
                   </Typography>
                   <Typography variant='h5' sx={{ margin: '0' }}>
-                    A official website
+                    An official website
                   </Typography>
                   <Box
                     sx={{
@@ -1108,7 +1108,7 @@ const Portfolio = () => {
                     Quick Weather
                   </Typography>
                   <Typography variant='h5' sx={{ margin: '0' }}>
-                    A Weather Foreast Website
+                    A Weather Forecast Website
                   </Typography>
                   <Box
                     sx={{
@@ -1121,16 +1121,16 @@ const Portfolio = () => {
                     }}
                   />
                   <Typography variant='h6' sx={{}}>
-                    Quick weather is a weather forcast web application built
+                    Quick weather is a weather forecast web application built
                     using vanilla <strong>JavaScript</strong> for the front end
                     and <strong>Node.js</strong> and <strong>Express</strong>{' '}
                     for the backend server. It utilizes Weather and Mapbox{' '}
-                    <strong>APIs</strong> to provide the current weather forcast
+                    <strong>APIs</strong> to provide the current weather forecast
                     for any location around the world
                     <br />
                     <br />
                     The application allows users to enter any location of their
-                    choice and view the current weather forcast for that
+                    choice and view the current weather forecast for that
                     location including temperature and chance of rain.
                   </Typography>
                   <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -1246,7 +1246,7 @@ const Portfolio = () => {
                     sending real-time messages between connected users.
                     <br />
                     <br />
-                    The application allows users to enter any chat room of thier
+                    The application allows users to enter any chat room of their
                     choice and send messages to other users in the same room as
                     they are. This messages are delivered in real-time.
                   </Typography>
