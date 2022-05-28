@@ -100,6 +100,105 @@ a {
   opacity: 1;
 }
 
+/* Portfolio */
+
+.revealPortfolioImg1 {
+  transform: translateX(300px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioImg1.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.revealPortfolioDesc1 {
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioDesc1.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.revealPortfolioImg2 {
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioImg2.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.revealPortfolioDesc2 {
+  transform: translateX(300px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioDesc2.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.revealPortfolioImg3 {
+  transform: translateX(300px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioImg3.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.revealPortfolioDesc3 {
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioDesc3.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.revealPortfolioImg4 {
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioImg4.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.revealPortfolioDesc4 {
+  transform: translateX(300px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioDesc4.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.revealPortfolioImg5 {
+  transform: translateX(300px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioImg5.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.revealPortfolioDesc5 {
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioDesc5.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 
 @media screen and (max-width: 800px) {
   .revealDev {
@@ -186,4 +285,104 @@ a {
   transform: translateY(0);
   opacity: 1;
 }
+
+/* Portfolio */
+
+.revealPortfolioImg1 {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioImg1.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.revealPortfolioDesc1 {
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioDesc1.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.revealPortfolioImg2 {
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioImg2.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.revealPortfolioDesc2 {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioDesc2.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.revealPortfolioImg3 {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioImg3.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.revealPortfolioDesc3 {
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioDesc3.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.revealPortfolioImg4 {
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioImg4.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.revealPortfolioDesc4 {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioDesc4.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.revealPortfolioImg5 {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioImg5.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.revealPortfolioDesc5 {
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+.revealPortfolioDesc5.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 }

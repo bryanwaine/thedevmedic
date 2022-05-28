@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button, Card, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
 import { useRouter } from 'next/router';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -10,6 +10,164 @@ import ImageCarousel from '../components/Carousel';
 
 const Portfolio = () => {
   const router = useRouter();
+
+ function revealPortfolioImg1() {
+    var reveals = document.querySelectorAll('.revealPortfolioImg1');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 250;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+  
+  function revealPortfolioDesc1() {
+    var reveals = document.querySelectorAll('.revealPortfolioDesc1');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 250;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+ function revealPortfolioImg2() {
+    var reveals = document.querySelectorAll('.revealPortfolioImg2');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 250;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+  function revealPortfolioDesc2() {
+    var reveals = document.querySelectorAll('.revealPortfolioDesc2');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 250;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+ function revealPortfolioImg3() {
+    var reveals = document.querySelectorAll('.revealPortfolioImg3');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 250;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+  function revealPortfolioDesc3() {
+    var reveals = document.querySelectorAll('.revealPortfolioDesc3');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 250;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+ function revealPortfolioImg4() {
+    var reveals = document.querySelectorAll('.revealPortfolioImg4');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 250;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+  function revealPortfolioDesc4() {
+    var reveals = document.querySelectorAll('.revealPortfolioDesc4');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 250;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+ function revealPortfolioImg5() {
+    var reveals = document.querySelectorAll('.revealPortfolioImg5');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 250;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+  function revealPortfolioDesc5() {
+    var reveals = document.querySelectorAll('.revealPortfolioDesc5');
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 250;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+ 
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      revealPortfolioImg1();
+      revealPortfolioDesc1();
+      revealPortfolioImg2();
+      revealPortfolioDesc2();
+      revealPortfolioImg3();
+      revealPortfolioDesc3();
+      revealPortfolioImg4();
+      revealPortfolioDesc4();
+      revealPortfolioImg5();
+      revealPortfolioDesc5();
+    });
+  }, []);
+
   return (
     <Layout selectedPortfolio title='My Portfolio'>
       <Box>
@@ -49,7 +207,10 @@ const Portfolio = () => {
             >
               {/* Ahia Marketplace Description Section */}
 
-              <Box sx={{ height: '50rem', width: '80%' }}>
+              <Box
+                sx={{ height: '50rem', width: '80%' }}
+                className='revealPortfolioDesc1'
+              >
                 <Card
                   raised={true}
                   sx={{
@@ -116,7 +277,10 @@ const Portfolio = () => {
 
               {/* LMS Screen Section */}
 
-              <Box sx={{ height: '50rem', width: '80%' }}>
+              <Box
+                sx={{ height: '50rem', width: '80%' }}
+                className='revealPortfolioImg2'
+              >
                 <Typography
                   variant='h3'
                   sx={{
@@ -159,7 +323,10 @@ const Portfolio = () => {
 
               {/* PHS Website Description Section  */}
 
-              <Box sx={{ height: '50rem', width: '80%' }}>
+              <Box
+                sx={{ height: '50rem', width: '80%' }}
+                className='revealPortfolioDesc3'
+              >
                 <Card
                   raised={true}
                   sx={{
@@ -221,7 +388,10 @@ const Portfolio = () => {
 
               {/* Quick Weather Screen Section*/}
 
-              <Box sx={{ height: '50rem', width: '80%' }}>
+              <Box
+                sx={{ height: '50rem', width: '80%' }}
+                className='revealPortfolioImg4'
+              >
                 <Typography
                   variant='h3'
                   sx={{
@@ -264,7 +434,10 @@ const Portfolio = () => {
 
               {/* Chat Rooms Description Section  */}
 
-              <Box sx={{ height: '50rem', width: '80%' }}>
+              <Box
+                sx={{ height: '50rem', width: '80%' }}
+                className='revealPortfolioDesc5'
+              >
                 <Card
                   raised={true}
                   sx={{
@@ -511,7 +684,10 @@ const Portfolio = () => {
             >
               {/*Ahia Screen Section */}
 
-              <Box sx={{ height: { xs: '40rem', lg: '50rem' }, width: '80%' }}>
+              <Box
+                sx={{ height: { xs: '40rem', lg: '50rem' }, width: '80%' }}
+                className='revealPortfolioImg1'
+              >
                 <Typography
                   variant='h3'
                   sx={{
@@ -562,6 +738,7 @@ const Portfolio = () => {
                   display: { xs: 'initial', lg: 'none' },
                   margin: '0 0 4rem 0',
                 }}
+                className='revealPortfolioDesc1'
               >
                 <Card
                   raised={true}
@@ -635,6 +812,7 @@ const Portfolio = () => {
                   width: '80%',
                   display: { xs: 'initial', lg: 'none' },
                 }}
+                className='revealPortfolioImg2'
               >
                 <Typography
                   variant='h3'
@@ -679,7 +857,10 @@ const Portfolio = () => {
 
               {/* LMS Description Section */}
 
-              <Box sx={{ height: { xs: '42rem', lg: '50rem' }, width: '80%' }}>
+              <Box
+                sx={{ height: { xs: '42rem', lg: '50rem' }, width: '80%' }}
+                className='revealPortfolioDesc2'
+              >
                 <Card
                   raised={true}
                   sx={{
@@ -740,7 +921,10 @@ const Portfolio = () => {
 
               {/* PHS Website Screen */}
 
-              <Box sx={{ height: { xs: '40rem', lg: '50rem' }, width: '80%' }}>
+              <Box
+                sx={{ height: { xs: '40rem', lg: '50rem' }, width: '80%' }}
+                className='revealPortfolioImg3'
+              >
                 <Typography
                   variant='h3'
                   sx={{
@@ -790,6 +974,7 @@ const Portfolio = () => {
                   width: '80%',
                   display: { xs: 'initial', lg: 'none' },
                 }}
+                className='revealPortfolioDesc3'
               >
                 <Card
                   raised={true}
@@ -858,6 +1043,7 @@ const Portfolio = () => {
                   width: '80%',
                   display: { xs: 'initial', lg: 'none' },
                 }}
+                className='revealPortfolioImg4'
               >
                 <Typography
                   variant='h3'
@@ -902,7 +1088,10 @@ const Portfolio = () => {
 
               {/* Quick Weather Description Section */}
 
-              <Box sx={{ height: { xs: '52rem', lg: '50rem' }, width: '80%' }}>
+              <Box
+                sx={{ height: { xs: '52rem', lg: '50rem' }, width: '80%' }}
+                className='revealPortfolioDesc4'
+              >
                 <Card
                   raised={true}
                   sx={{
@@ -965,7 +1154,10 @@ const Portfolio = () => {
 
               {/* Chat Rooms Screen Section */}
 
-              <Box sx={{ height: { xs: '40rem', lg: '50rem' }, width: '80%' }}>
+              <Box
+                sx={{ height: { xs: '40rem', lg: '50rem' }, width: '80%' }}
+                className='revealPortfolioImg5'
+              >
                 <Typography
                   variant='h3'
                   sx={{
@@ -1015,6 +1207,7 @@ const Portfolio = () => {
                   width: '80%',
                   display: { xs: 'initial', lg: 'none' },
                 }}
+                className='revealPortfolioDesc5'
               >
                 <Card
                   raised={true}
