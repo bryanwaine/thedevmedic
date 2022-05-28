@@ -26,6 +26,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import DownloadIcon from '@mui/icons-material/Download';
 
 const Layout = ({ description, title, children, selectedAbout, selectedPortfolio, selectedContact }) => {
   let theme = createTheme({
@@ -346,7 +347,7 @@ const Layout = ({ description, title, children, selectedAbout, selectedPortfolio
             sx={{
               top: 'auto',
               bottom: 0,
-              height: '6rem',
+              height: '10rem',
               alignItems: 'center',
               justifyContent: 'center',
               paddingBottom: '1rem',
@@ -360,6 +361,14 @@ const Layout = ({ description, title, children, selectedAbout, selectedPortfolio
                 flexDirection: { xs: 'column', lg: 'row' },
               }}
             >
+              <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', color: '#aaaaaa', ':hover': {
+                color: '#ffffff'
+              }}} onClick={() => router.push('https://pdfhost.io/v/OKIagqlpz_Nwannes_Resume')}>
+                <Typography variant='h5'>
+                  DOWNLOAD MY RESUME&nbsp;
+                </Typography>
+                <DownloadIcon/>
+              </Box>
               <Box>
                 <Typography variant='h6'>
                   Created by Nwanne Bryan Ezeaka, MD. &nbsp; &copy;{' '}
