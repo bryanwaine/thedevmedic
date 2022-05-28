@@ -216,7 +216,11 @@ const Layout = ({
                   justifyContent: 'start',
                 }}
               >
-                <NextLink href='https://github.com/bryanwaine' passHref>
+                <a
+                  href='https://github.com/bryanwaine'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <GitHubIcon
                     sx={{
                       fontSize: 30,
@@ -228,10 +232,11 @@ const Layout = ({
                       },
                     }}
                   />
-                </NextLink>
-                <NextLink
+                </a>
+                <a
                   href='https://www.linkedin.com/in/nwanne-ezeaka-mbbs-a45bb475/'
-                  passHref
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   <LinkedInIcon
                     sx={{
@@ -244,8 +249,12 @@ const Layout = ({
                       },
                     }}
                   />
-                </NextLink>
-                <NextLink href='https://twitter.com/bryanwaine_MD' passHref>
+                </a>
+                <a
+                  href='https://twitter.com/bryanwaine_MD'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <TwitterIcon
                     sx={{
                       fontSize: 30,
@@ -257,8 +266,12 @@ const Layout = ({
                       },
                     }}
                   />
-                </NextLink>
-                <NextLink href='https://instagram.com/bryanwaine_MD' passHref>
+                </a>
+                <a
+                  href='https://instagram.com/bryanwaine_MD'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <InstagramIcon
                     sx={{
                       fontSize: 30,
@@ -270,7 +283,7 @@ const Layout = ({
                       },
                     }}
                   />
-                </NextLink>
+                </a>
               </Box>
             </Toolbar>
           </AppBar>
@@ -382,13 +395,14 @@ const Layout = ({
                   },
                 }}
               >
-                <NextLink
-                  href='https://pdfhost.io/v/OKIagqlpz_Nwannes_Resume'
-                  passHref
-                ><DownloadIcon />
+                <DownloadIcon />
+                <a
+                  href='https://pdfhost.io/v/EZjfiyptP_Nwannes_Resume'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <Typography variant='h5'>DOWNLOAD MY RESUME&nbsp;</Typography>
-                </NextLink>
-                
+                </a>
               </Box>
               <Box>
                 <Typography variant='h6'>
@@ -402,7 +416,11 @@ const Layout = ({
                   justifyContent: 'end',
                 }}
               >
-                <NextLink href='https://github.com/bryanwaine' passHref>
+                <a
+                  href='https://github.com/bryanwaine'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <GitHubIcon
                     sx={{
                       fontSize: 30,
@@ -414,10 +432,11 @@ const Layout = ({
                       },
                     }}
                   />
-                </NextLink>
-                <NextLink
+                </a>
+                <a
                   href='https://www.linkedin.com/in/nwanne-ezeaka-mbbs-a45bb475/'
-                  passHref
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   <LinkedInIcon
                     sx={{
@@ -430,8 +449,12 @@ const Layout = ({
                       },
                     }}
                   />
-                </NextLink>
-                <NextLink href='https://twitter.com/bryanwaine_MD' passHref>
+                </a>
+                <a
+                  href='https://twitter.com/bryanwaine_MD'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <TwitterIcon
                     sx={{
                       fontSize: 30,
@@ -443,8 +466,12 @@ const Layout = ({
                       },
                     }}
                   />
-                </NextLink>
-                <NextLink href='https://instagram.com/bryanwaine_MD' passHref>
+                </a>
+                <a
+                  href='https://instagram.com/bryanwaine_MD'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <InstagramIcon
                     sx={{
                       fontSize: 30,
@@ -456,7 +483,7 @@ const Layout = ({
                       },
                     }}
                   />
-                </NextLink>
+                </a>
               </Box>
             </Toolbar>
           </AppBar>
