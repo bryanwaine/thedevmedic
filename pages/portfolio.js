@@ -11,7 +11,7 @@ import ImageCarousel from '../components/Carousel';
 const Portfolio = () => {
   const router = useRouter();
   return (
-    <Layout selectedPortfolio title='Portfolio'>
+    <Layout selectedPortfolio title='My Portfolio'>
       <Box>
         <Grid container spacing={0}>
           {/* Carousel */}
