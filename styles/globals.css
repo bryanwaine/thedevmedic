@@ -16,14 +16,14 @@ a {
 }
 
 .revealDev {
-  transform: translateY(-200px);
+  transform: translateY(-150px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealMedic {
-  transform: translateY(200px);
+  transform: translateY(150px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealDev.active {
   transform: translateY(0);
@@ -35,9 +35,9 @@ a {
 }
 
 .revealTechStack {
-  transform: translateX(50px);
+  transform: translateX(100px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealTechStack.active {
   transform: translateX(0);
@@ -47,7 +47,7 @@ a {
 .revealAboutTopLeft {
   transform: translateX(-200px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealAboutTopLeft.active {
   transform: translateX(0);
@@ -56,7 +56,7 @@ a {
 .revealAboutTopRight {
   transform: translateX(200px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealAboutTopRight.active {
   transform: translateX(0);
@@ -65,7 +65,7 @@ a {
 .revealAboutLeft {
   transform: translateX(-200px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealAboutLeft.active {
   transform: translateX(0);
@@ -74,7 +74,7 @@ a {
 .revealAboutRight {
   transform: translateX(200px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealAboutRight.active {
   transform: translateX(0);
@@ -84,7 +84,7 @@ a {
 .revealAboutBottomLeft {
   transform: translateX(-200px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealAboutBottomLeft.active {
   transform: translateX(0);
@@ -93,7 +93,7 @@ a {
 .revealAboutBottomRight {
   transform: translateX(200px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealAboutBottomRight.active {
   transform: translateX(0);
@@ -103,14 +103,14 @@ a {
 
 @media screen and (max-width: 800px) {
   .revealDev {
-  transform: translateY(0px);
+  transform: translateY(-150px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealMedic {
-  transform: translateY(0px);
+  transform: translateY(150px);
   opacity: 0;
-  transition: 4s all ease;
+  transition: 3s all ease;
 }
 .revealDev.active {
   transform: translateY(0);
@@ -124,7 +124,7 @@ a {
 .revealTechStack {
   transform: translateX(0px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealTechStack.active {
   transform: translateX(0);
@@ -132,58 +132,58 @@ a {
 }
 
 .revealAboutTopLeft {
-  transform: translateX(0px);
+  transform: translateY(150px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealAboutTopLeft.active {
-  transform: translateX(0);
+  transform: translateY(0px);
   opacity: 1;
 }
 .revealAboutTopRight {
-  transform: translateX(0px);
+  transform: translateY(-150px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealAboutTopRight.active {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
 }
 .revealAboutLeft {
-  transform: translateX(0px);
+  transform: translateY(150px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealAboutLeft.active {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
 }
 .revealAboutRight {
-  transform: translateX(0px);
+  transform: translateY(150px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealAboutRight.active {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
 }
 
 .revealAboutBottomLeft {
-  transform: translateX(0px);
+  transform: translateY(150px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealAboutBottomLeft.active {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
 }
 .revealAboutBottomRight {
-  transform: translateX(0px);
+  transform: translateY(150px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 3s all ease;
 }
 .revealAboutBottomRight.active {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
 }
 }

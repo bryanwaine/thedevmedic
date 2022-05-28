@@ -52,7 +52,6 @@ export default function Home() {
   } = useForm(formOptions);
 
   const submitHandler = async ({ name, email, textarea }) => {
-    console.log(router.query);
     try {
       setLoading(true);
       const { data } = await axios.post(
@@ -112,7 +111,7 @@ export default function Home() {
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = -250;
+      var elementVisible = 350;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add('active');
       } else {
@@ -175,7 +174,6 @@ export default function Home() {
                       flex: 1,
                       cursor: 'pointer',
                     }}
-                    className='revealMedic'
                   >
                     <Typography
                       variant='h1'
@@ -225,13 +223,12 @@ export default function Home() {
                       display: 'flex',
                       flexDirection: 'column',
                       alignItems: 'center',
-                      marginTop: { xs: '1rem', md: '10rem' },
+                      marginTop: { xs: '1rem', sm: '10rem' },
                       position: 'relative',
                       right: '1.5rem',
                       flex: 1,
                       cursor: 'pointer',
                     }}
-                    className='revealDev'
                   >
                     <Typography
                       variant='h1'
@@ -273,7 +270,7 @@ export default function Home() {
             }}
           >
             <Typography
-              variant='h5'
+              variant='h6'
               sx={{
                 margin: '2rem 0 4rem 0',
                 width: '100%',
