@@ -35,7 +35,7 @@ a {
 }
 
 .revealTechStack {
-  transform: translateX(100px);
+  transform: translateX(-200px);
   opacity: 0;
   transition: 3s all ease;
 }

@@ -41,7 +41,7 @@ export default function Home() {
       .required('Email is required')
       .email('Email is not valid'),
 
-    textarea: Yup.string().required('Message is required'),
+    message: Yup.string().required('Message is required'),
   });
   const formOptions = { resolver: yupResolver(validationSchema) };
   const {
@@ -51,20 +51,20 @@ export default function Home() {
     setValue,
   } = useForm(formOptions);
 
-  const submitHandler = async ({ name, email, textarea }) => {
+  const submitHandler = async ({ name, email, message }) => {
     try {
       setLoading(true);
-      const { data } = await axios.post(
-        'https://formsubmit.co/84753cadf44270d64eb0842ad20b5f42',
+      await axios.post(
+       '/api/contact',
         {
           name,
           email,
-          textarea,
+          message,
         }
       );
       setValue('name', '');
       setValue('email', '');
-      setValue('textarea', '');
+      setValue('message', '');
       enqueueSnackbar(`Message submitted successfully!`, {
         variant: 'success',
       });
@@ -155,9 +155,8 @@ export default function Home() {
         spacing={0}
         style={{ display: 'flex', justifyContent: 'center', zIndex: -1 }}
       >
-        <Grid items md={12} xs={12}>
+        <Grid item md={12} xs={12}>
           <div
-            raised={true}
             style={{ width: '100%', padding: '6rem 0.5rem 0' }}
           >
             <div style={{ display: 'flex' }}>
@@ -647,7 +646,7 @@ export default function Home() {
                 </ListItem>
                 <ListItem sx={{ margin: '0 0 2rem 0' }}>
                   <Controller
-                    name='textarea'
+                    name='message'
                     control={control}
                     defaultValue=''
                     render={({ field }) => (
@@ -672,11 +671,11 @@ export default function Home() {
                         }}
                         variant='outlined'
                         fullWidth
-                        id='textarea'
+                        id='message'
                         label='Message'
-                        inputProps={{ type: 'textarea' }}
-                        error={Boolean(errors.textarea)}
-                        helperText={errors.textarea?.message}
+                        inputProps={{ type: 'message' }}
+                        error={Boolean(errors.message)}
+                        helperText={errors.message?.message}
                         {...field}
                       />
                     )}
