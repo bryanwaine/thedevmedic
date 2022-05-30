@@ -54,8 +54,8 @@ export default function Home() {
   const submitHandler = async ({ name, email, message }) => {
     try {
       setLoading(true);
-      await axios.post(
-       '/api/contact',
+      const { data } = await axios.post(
+        'https://dev-medic-server.herokuapp.com',
         {
           name,
           email,
@@ -65,7 +65,7 @@ export default function Home() {
       setValue('name', '');
       setValue('email', '');
       setValue('message', '');
-      enqueueSnackbar(`Message submitted successfully!`, {
+      enqueueSnackbar(data.message, {
         variant: 'success',
       });
       router.push('/');
