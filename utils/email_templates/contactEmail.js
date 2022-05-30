@@ -482,9 +482,6 @@ const ContactEmail = (name, email, message) => {
                         <p style="font-size: 16px; line-height: 1.625; color: #51545E; margin: .4em 0 1.1875em;"><strong>Message:</strong><br/>${message}</p>
                         <!-- Action -->
                         
-                        
-                        
-                        
                         <!-- Sub copy -->
                         <table class="body-sub" role="presentation" style="margin: 25px 0 25px; height: 2rem padding-top: 25px; border-top-width: 1px; border-top-color: #EAEAEC; border-top-style: solid;">
                         <div style="height: 2rem"></div>
