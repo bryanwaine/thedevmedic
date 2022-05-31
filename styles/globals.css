@@ -298,7 +298,7 @@ a {
   opacity: 1;
 }
 .revealPortfolioDesc1 {
-  transform: translateY(-200px);
+  transform: translateY(200px);
   opacity: 0;
   transition: 3s all ease;
 }
@@ -308,7 +308,7 @@ a {
 }
 
 .revealPortfolioImg2 {
-  transform: translateY(-200px);
+  transform: translateY(200px);
   opacity: 0;
   transition: 3s all ease;
 }
@@ -337,7 +337,7 @@ a {
   opacity: 1;
 }
 .revealPortfolioDesc3 {
-  transform: translateY(-200px);
+  transform: translateY(200px);
   opacity: 0;
   transition: 3s all ease;
 }
@@ -347,7 +347,7 @@ a {
 }
 
 .revealPortfolioImg4 {
-  transform: translateY(-200px);
+  transform: translateY(200px);
   opacity: 0;
   transition: 3s all ease;
 }
@@ -376,7 +376,7 @@ a {
   opacity: 1;
 }
 .revealPortfolioDesc5 {
-  transform: translateY(-200px);
+  transform: translateY(200px);
   opacity: 0;
   transition: 3s all ease;
 }
