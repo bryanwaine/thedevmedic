@@ -17,9 +17,7 @@ const About = () => {
       var elementVisible = -250;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add('active');
-      } else {
-        reveals[i].classList.remove('active');
-      }
+      } 
     }
   }
 
@@ -45,9 +43,7 @@ const About = () => {
       var elementVisible = 200;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add('active');
-      } else {
-        reveals[i].classList.remove('active');
-      }
+      } 
     }
   }
 
@@ -59,9 +55,7 @@ const About = () => {
       var elementVisible = 200;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add('active');
-      } else {
-        reveals[i].classList.remove('active');
-      }
+      } 
     }
   }
 
@@ -73,9 +67,7 @@ const About = () => {
       var elementVisible = 250;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add('active');
-      } else {
-        reveals[i].classList.remove('active');
-      }
+      } 
     }
   }
 
@@ -87,9 +79,7 @@ const About = () => {
       var elementVisible = 250;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add('active');
-      } else {
-        reveals[i].classList.remove('active');
-      }
+      } 
     }
   }
 

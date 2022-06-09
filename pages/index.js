@@ -1,4 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import NextLink from 'next/link';
+
 import {
   Button,
   Card,
@@ -12,21 +16,19 @@ import {
   Typography,
 } from '@mui/material';
 import { Box } from '@mui/system';
-import Image from 'next/image';
-import Layout from '../components/Layout';
-import dev from '/public/Dev.png';
-import medic from '/public/Medic.png';
 import { Controller, useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { useSnackbar } from 'notistack';
+import Image from 'next/image';
 import PersonIcon from '@mui/icons-material/Person';
 import MailIcon from '@mui/icons-material/Mail';
-import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 import MessageIcon from '@mui/icons-material/Message';
 import axios from 'axios';
-import { useSnackbar } from 'notistack';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import NextLink from 'next/link';
+
+import dev from '/public/Dev.png';
+import medic from '/public/Medic.png';
+import Layout from '../components/Layout';
 
 export default function Home() {
   const { enqueueSnackbar } = useSnackbar();
@@ -86,9 +88,7 @@ export default function Home() {
       var elementVisible = 150;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add('active');
-      } else {
-        reveals[i].classList.remove('active');
-      }
+      } 
     }
   }
 
@@ -100,9 +100,7 @@ export default function Home() {
       var elementVisible = 150;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add('active');
-      } else {
-        reveals[i].classList.remove('active');
-      }
+      } 
     }
   }
 
@@ -114,9 +112,7 @@ export default function Home() {
       var elementVisible = 350;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add('active');
-      } else {
-        reveals[i].classList.remove('active');
-      }
+      } 
     }
   }
 
