@@ -168,7 +168,7 @@ const Layout = ({
                     variant='h5'
                     sx={{
                       cursor: 'pointer',
-                      color: selectedAbout ? '#ffffff' : '#666666',
+                      color: selectedAbout ? '#ffffff' : '#aaaaaa',
                       ':hover': {
                         color: '#ffffff',
                       },
@@ -182,7 +182,7 @@ const Layout = ({
                     variant='h5'
                     sx={{
                       cursor: 'pointer',
-                      color: selectedPortfolio ? '#ffffff' : '#666666',
+                      color: selectedPortfolio ? '#ffffff' : '#aaaaaa',
                       ':hover': {
                         color: '#ffffff',
                       },
@@ -199,7 +199,7 @@ const Layout = ({
                       color:
                         selectedContact === 'selectedContact'
                           ? '#ffffff'
-                          : '#666666',
+                          : '#aaaaaa',
                       ':hover': {
                         color: '#ffffff',
                       },
@@ -226,7 +226,7 @@ const Layout = ({
                       fontSize: 30,
                       mr: 2,
                       cursor: 'pointer',
-                      color: '#666666',
+                      color: '#aaaaaa',
                       ':hover': {
                         color: '#ffffff',
                       },
@@ -243,7 +243,7 @@ const Layout = ({
                       fontSize: 30,
                       mr: 2,
                       cursor: 'pointer',
-                      color: '#666666',
+                      color: '#aaaaaa',
                       ':hover': {
                         color: '#ffffff',
                       },
@@ -260,7 +260,7 @@ const Layout = ({
                       fontSize: 30,
                       mr: 2,
                       cursor: 'pointer',
-                      color: '#666666',
+                      color: '#aaaaaa',
                       ':hover': {
                         color: '#ffffff',
                       },
@@ -277,7 +277,7 @@ const Layout = ({
                       fontSize: 30,
                       mr: 2,
                       cursor: 'pointer',
-                      color: '#666666',
+                      color: '#aaaaaa',
                       ':hover': {
                         color: '#ffffff',
                       },
@@ -309,7 +309,7 @@ const Layout = ({
                     variant='h5'
                     sx={{
                       cursor: 'pointer',
-                      color: selectedAbout ? '#ffffff' : '#666666',
+                      color: selectedAbout ? '#ffffff' : '#aaaaaa',
                       ':hover': {
                         color: '#ffffff',
                       },
@@ -329,7 +329,7 @@ const Layout = ({
                     variant='h5'
                     sx={{
                       cursor: 'pointer',
-                      color: selectedPortfolio ? '#ffffff' : '#666666',
+                      color: selectedPortfolio ? '#ffffff' : '#aaaaaa',
                       ':hover': {
                         color: '#ffffff',
                       },
@@ -349,7 +349,7 @@ const Layout = ({
                     variant='h5'
                     sx={{
                       cursor: 'pointer',
-                      color: selectedContact ? '#ffffff' : '#666666',
+                      color: selectedContact ? '#ffffff' : '#aaaaaa',
                       ':hover': {
                         color: '#ffffff',
                       },
@@ -426,7 +426,7 @@ const Layout = ({
                       fontSize: 30,
                       mr: 2,
                       cursor: 'pointer',
-                      color: '#666666',
+                      color: '#aaaaaa',
                       ':hover': {
                         color: '#ffffff',
                       },
@@ -443,7 +443,7 @@ const Layout = ({
                       fontSize: 30,
                       mr: 2,
                       cursor: 'pointer',
-                      color: '#666666',
+                      color: '#aaaaaa',
                       ':hover': {
                         color: '#ffffff',
                       },
@@ -460,7 +460,7 @@ const Layout = ({
                       fontSize: 30,
                       mr: 2,
                       cursor: 'pointer',
-                      color: '#666666',
+                      color: '#aaaaaa',
                       ':hover': {
                         color: '#ffffff',
                       },
@@ -477,7 +477,7 @@ const Layout = ({
                       fontSize: 30,
                       mr: 2,
                       cursor: 'pointer',
-                      color: '#666666',
+                      color: '#aaaaaa',
                       ':hover': {
                         color: '#ffffff',
                       },
