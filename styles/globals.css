@@ -18,12 +18,12 @@ a {
 .revealDev {
   transform: translateY(-150px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealMedic {
   transform: translateY(150px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealDev.active {
   transform: translateY(0);
@@ -37,7 +37,7 @@ a {
 .revealTechStack {
   transform: translateX(-200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealTechStack.active {
   transform: translateX(0);
@@ -47,7 +47,7 @@ a {
 .revealAboutTopLeft {
   transform: translateX(-200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealAboutTopLeft.active {
   transform: translateX(0);
@@ -56,7 +56,7 @@ a {
 .revealAboutTopRight {
   transform: translateX(200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealAboutTopRight.active {
   transform: translateX(0);
@@ -65,7 +65,7 @@ a {
 .revealAboutLeft {
   transform: translateX(-200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealAboutLeft.active {
   transform: translateX(0);
@@ -74,7 +74,7 @@ a {
 .revealAboutRight {
   transform: translateX(200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealAboutRight.active {
   transform: translateX(0);
@@ -84,7 +84,7 @@ a {
 .revealAboutBottomLeft {
   transform: translateX(-200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealAboutBottomLeft.active {
   transform: translateX(0);
@@ -93,7 +93,7 @@ a {
 .revealAboutBottomRight {
   transform: translateX(200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealAboutBottomRight.active {
   transform: translateX(0);
@@ -105,7 +105,7 @@ a {
 .revealPortfolioImg1 {
   transform: translateX(300px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioImg1.active {
   transform: translateX(0);
@@ -114,7 +114,7 @@ a {
 .revealPortfolioDesc1 {
   transform: translateX(-300px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioDesc1.active {
   transform: translateX(0);
@@ -124,7 +124,7 @@ a {
 .revealPortfolioImg2 {
   transform: translateX(-300px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioImg2.active {
   transform: translateX(0);
@@ -133,7 +133,7 @@ a {
 .revealPortfolioDesc2 {
   transform: translateX(300px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioDesc2.active {
   transform: translateX(0);
@@ -144,7 +144,7 @@ a {
 .revealPortfolioImg3 {
   transform: translateX(300px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioImg3.active {
   transform: translateX(0);
@@ -153,7 +153,7 @@ a {
 .revealPortfolioDesc3 {
   transform: translateX(-300px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioDesc3.active {
   transform: translateX(0);
@@ -163,7 +163,7 @@ a {
 .revealPortfolioImg4 {
   transform: translateX(-300px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioImg4.active {
   transform: translateX(0);
@@ -172,7 +172,7 @@ a {
 .revealPortfolioDesc4 {
   transform: translateX(300px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioDesc4.active {
   transform: translateX(0);
@@ -183,7 +183,7 @@ a {
 .revealPortfolioImg5 {
   transform: translateX(300px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioImg5.active {
   transform: translateX(0);
@@ -192,7 +192,7 @@ a {
 .revealPortfolioDesc5 {
   transform: translateX(-300px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioDesc5.active {
   transform: translateX(0);
@@ -204,12 +204,12 @@ a {
   .revealDev {
   transform: translateY(-150px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealMedic {
   transform: translateY(150px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealDev.active {
   transform: translateY(0);
@@ -223,7 +223,7 @@ a {
 .revealTechStack {
   transform: translateX(0px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealTechStack.active {
   transform: translateX(0);
@@ -233,7 +233,7 @@ a {
 .revealAboutTopLeft {
   transform: translateY(150px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealAboutTopLeft.active {
   transform: translateY(0px);
@@ -242,7 +242,7 @@ a {
 .revealAboutTopRight {
   transform: translateY(-150px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealAboutTopRight.active {
   transform: translateY(0);
@@ -251,7 +251,7 @@ a {
 .revealAboutLeft {
   transform: translateY(150px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealAboutLeft.active {
   transform: translateY(0);
@@ -260,7 +260,7 @@ a {
 .revealAboutRight {
   transform: translateY(150px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealAboutRight.active {
   transform: translateY(0);
@@ -270,7 +270,7 @@ a {
 .revealAboutBottomLeft {
   transform: translateY(150px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealAboutBottomLeft.active {
   transform: translateY(0);
@@ -279,7 +279,7 @@ a {
 .revealAboutBottomRight {
   transform: translateY(150px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealAboutBottomRight.active {
   transform: translateY(0);
@@ -291,7 +291,7 @@ a {
 .revealPortfolioImg1 {
   transform: translateY(200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioImg1.active {
   transform: translateY(0);
@@ -300,7 +300,7 @@ a {
 .revealPortfolioDesc1 {
   transform: translateY(200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioDesc1.active {
   transform: translateY(0);
@@ -310,7 +310,7 @@ a {
 .revealPortfolioImg2 {
   transform: translateY(200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioImg2.active {
   transform: translateY(0);
@@ -319,7 +319,7 @@ a {
 .revealPortfolioDesc2 {
   transform: translateY(200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioDesc2.active {
   transform: translateY(0);
@@ -330,7 +330,7 @@ a {
 .revealPortfolioImg3 {
   transform: translateY(200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioImg3.active {
   transform: translateY(0);
@@ -339,7 +339,7 @@ a {
 .revealPortfolioDesc3 {
   transform: translateY(200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioDesc3.active {
   transform: translateY(0);
@@ -349,7 +349,7 @@ a {
 .revealPortfolioImg4 {
   transform: translateY(200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioImg4.active {
   transform: translateY(0);
@@ -358,7 +358,7 @@ a {
 .revealPortfolioDesc4 {
   transform: translateY(200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioDesc4.active {
   transform: translateY(0);
@@ -369,7 +369,7 @@ a {
 .revealPortfolioImg5 {
   transform: translateY(200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioImg5.active {
   transform: translateY(0);
@@ -378,7 +378,7 @@ a {
 .revealPortfolioDesc5 {
   transform: translateY(200px);
   opacity: 0;
-  transition: 3s all ease;
+  transition: 1s all ease;
 }
 .revealPortfolioDesc5.active {
   transform: translateY(0);
