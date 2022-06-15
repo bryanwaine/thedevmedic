@@ -268,6 +268,7 @@ export default function Home() {
           >
             <Typography
               variant='h6'
+              component='h1'
               sx={{
                 margin: '2rem 0 4rem 0',
                 width: '100%',
