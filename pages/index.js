@@ -144,6 +144,7 @@ export default function Home() {
     <Layout
       sx={{ width: '100%' }}
       title='Home'
+      description='Software Developer and Medical Doctor proficient in full stack JavaScript development.'
       selectedContact={selectedContact}
     >
       <Grid
