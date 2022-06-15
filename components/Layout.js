@@ -94,7 +94,7 @@ const Layout = ({
   return (
     <Box>
       <Head>
-        <title>{title ? `The Dev Medic | ${title}  ` : `DevMedic`}</title>
+        <title>{title ? `The Dev Medic | ${title}  ` : `The Dev Medic`}</title>
         <link rel='icon' type='image/x-icon' href='/devMd_black.png' />
         {description && <meta name='description' content={description}></meta>}
       </Head>
