@@ -180,6 +180,7 @@ export default function Home() {
                     >{`<Dev/>`}</Typography>
                     <Typography
                       variant='h5'
+                      component='h1'
                       sx={{
                         width: '75%',
                         textAlign: 'center',
@@ -234,6 +235,7 @@ export default function Home() {
                     >{`Medic`}</Typography>
                     <Typography
                       variant='h5'
+                      component='h1'
                       sx={{
                         width: '75%',
                         textAlign: 'center',
