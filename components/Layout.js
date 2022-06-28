@@ -397,7 +397,7 @@ const Layout = ({
               >
                 <DownloadIcon />
                 <a
-                  href='https://pdfhost.io/v/EZjfiyptP_Nwannes_Resume'
+                  href='https://drive.google.com/file/d/16G_tiict98-5pxZAtCtF3oebEeKvs0OY/view?usp=sharing'
                   target='_blank'
                   rel='noreferrer'
                 >
