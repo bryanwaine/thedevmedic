@@ -229,7 +229,7 @@ const Portfolio = () => {
                   </Typography>
                   <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <a
-                      href='http://dapper-fadesvercel.app'
+                      href='http://dapper-fades.vercel.app'
                       target='_blank'
                       rel='noreferrer'
                     >
