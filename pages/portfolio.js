@@ -183,6 +183,72 @@ const Portfolio = () => {
                 padding: '4rem 0',
               }}
             >
+
+              {/* Dapper Fades Description Section  */}
+
+              <Box
+                sx={{ height: '50rem', width: '80%' }}
+                className='revealPortfolioDesc5'
+              >
+                <Card
+                  raised={true}
+                  sx={{
+                    width: '100%',
+                    minHeight: '20rem',
+                    borderLeft: '5px solid #333744',
+                    borderRadius: 2,
+                    margin: '10rem 0 0 0',
+                    padding: '2rem',
+                  }}
+                >
+                  <Typography variant='h2' sx={{ fontWeight: 'bold' }}>
+                    Dapper Fades
+                  </Typography>
+                  <Typography variant='h5' sx={{ margin: '0' }}>
+                    A Haircut Booking Application
+                  </Typography>
+                  <Box
+                    sx={{
+                      height: '.3rem',
+                      width: { xs: '50%', lg: '30%' },
+                      borderRadius: 20,
+                      backgroundImage:
+                        'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
+                      marginTop: 1,
+                    }}
+                  />
+
+                  <Typography variant='h6' sx={{}}>
+                    Dapper Fades is a simple haircut booking application built using{' '}
+                     <strong>Next Js</strong> for the front end and{' '}
+                    <strong>Sanity CMS</strong>  for
+                    content handling.
+                    <br />
+                    <br />
+                    The application allows users to browse through pictures of the services provided, see thier prices, and book a haircut appointment by text message or email.
+                  </Typography>
+                  <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <a
+                      href='http://dapper-fadesvercel.app'
+                      target='_blank'
+                      rel='noreferrer'
+                    >
+                      <Button
+                        variant='contained'
+                        color='primary'
+                        type='submit'
+                        sx={{
+                          backgroundImage:
+                            'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
+                        }}
+                      >
+                        VISIT WEBSITE
+                      </Button>
+                    </a>
+                  </div>
+                </Card>
+              </Box>
+
               {/* Telemedicine Screen Section */}
 
               <Box
@@ -420,6 +486,7 @@ const Portfolio = () => {
                 </Card>
               </Box>
 
+
             </Grid>
 
             {/* Middle column */}
@@ -454,8 +521,35 @@ const Portfolio = () => {
                     }}
                   />
                   <img
-                    src='/w-d_logo_thumb.png'
+                    src='/dapperfades.png'
                     alt='Whatsup Doc!'
+                    style={{
+                      width: '4rem',
+                      height: '4rem',
+                      background: '#ffffff',
+                      border: '5px solid #1d2124',
+                      borderRadius: 15,
+                      padding: 5,
+                    }}
+                  />
+                  <Box
+                    sx={{
+                      background: '#1d2124',
+                      height: '46rem',
+                      width: '3%',
+                    }}
+                  />
+                  <Box
+                    sx={{
+                      display: { xs: 'initial', lg: 'none' },
+                      background: '#1d2124',
+                      height: '30rem',
+                      width: '3%',
+                    }}
+                  />
+                  <img
+                     src='/w-d_logo_thumb.png'
+                     alt='Whatsup Doc!'
                     style={{
                       width: '4rem',
                       height: '4rem',
@@ -481,8 +575,8 @@ const Portfolio = () => {
                     }}
                   />
                   <img
-                    src='/ahia.png'
-                    alt='ahia'
+                     src='/ahia.png'
+                     alt='ahia'
                     style={{
                       width: '4rem',
                       height: '4rem',
@@ -509,7 +603,7 @@ const Portfolio = () => {
                   />
                   <img
                     src='/phs.png'
-                    alt='PHS LMS'
+                    alt='PHS Website'
                     style={{
                       width: '4rem',
                       height: '4rem',
@@ -536,7 +630,7 @@ const Portfolio = () => {
                   />
                   <img
                     src='/phs.png'
-                    alt='PHS Website'
+                    alt='PHS LMS'
                     style={{
                       width: '4rem',
                       height: '4rem',
@@ -557,11 +651,12 @@ const Portfolio = () => {
                     sx={{
                       display: { xs: 'initial', lg: 'none' },
                       background: '#1d2124',
-                      height: '28rem',
+                      height: '30rem',
                       width: '3%',
                     }}
                   />
-                  
+                 
+                 
                 </Grid>
               </Grid>
 
@@ -579,9 +674,127 @@ const Portfolio = () => {
                 padding: '4rem 0',
               }}
             >
-              {/* Telemedicine Screen on XS */}
+           
+
+              {/* Dapper Fades Screen Section */}
 
               <Box
+                sx={{ height: { xs: '40rem', lg: '50rem' }, width: '80%' }}
+                className='revealPortfolioImg5'
+              >
+                <Typography
+                  variant='h3'
+                  sx={{
+                    width: '100%',
+                    height: '8rem',
+                    display: 'flex',
+                    justifyContent: 'start',
+                    alignItems: 'start',
+                    padding: '0',
+                    fontWeight: 700,
+                    color: '#666666',
+                  }}
+                >
+                  April, 2023
+                </Typography>
+                <Box
+                  sx={{
+                    display: 'flex',
+                    flex: 'center',
+                    flexDirection: 'column',
+                    alignItems: 'start',
+                    margin: { xs: '-5rem 0 0 0', lg: 0 },
+                  }}
+                >
+                  <img
+                    src='/dapperfades_screen.png'
+                    alt='Dapper Fades'
+                    style={{ width: '15rem', height: '30rem' }}
+                  />
+                  <Box
+                    sx={{
+                      boxShadow:
+                        '0px 0px 15px 4px rgba(0,0,0,0.50)  !important',
+                      width: '10rem',
+                      height: '0px',
+                      margin: '2rem 0 0 2.5rem',
+                    }}
+                  />
+                </Box>
+              </Box>
+
+              {/* Dapper Fades Description Section on XS */}
+
+              <Box
+                sx={{
+                  height: { xs: '40rem', lg: '50rem' },
+                  width: '80%',
+                  display: { xs: 'initial', lg: 'none' },
+                }}
+                className='revealPortfolioDesc5'
+              >
+                <Card
+                  raised={true}
+                  sx={{
+                    width: '100%',
+                    minHeight: '20rem',
+                    borderLeft: '5px solid #333744',
+                    borderRadius: 2,
+                    margin: { xs: 0, lg: '10rem 0 0 0' },
+                    padding: '2rem',
+                  }}
+                >
+                  <Typography variant='h2' sx={{ fontWeight: 'bold' }}>
+                    Dapper Fades
+                  </Typography>
+                  <Typography variant='h5' sx={{ margin: '0' }}>
+                    A Haircut booking Application
+                  </Typography>
+                  <Box
+                    sx={{
+                      height: '.3rem',
+                      width: { xs: '50%', lg: '30%' },
+                      borderRadius: 20,
+                      backgroundImage:
+                        'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
+                      marginTop: 1,
+                    }}
+                  />
+
+                  <Typography variant='h6' sx={{}}>
+                  Dapper Fades is a simple haircut booking application built using{' '}
+                     <strong>Next Js</strong> for the front end and{' '}
+                    <strong>Sanity CMS</strong>  for
+                    content handling.
+                    <br />
+                    <br />
+                    The application allows users to browse through pictures of the services provided, see thier prices, and book a haircut appointment by text message or email.
+                  </Typography>
+                  <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <a
+                      href='http://dapper-fades.vercel.app'
+                      target='_blank'
+                      rel='noreferrer'
+                    >
+                      <Button
+                        variant='contained'
+                        color='primary'
+                        type='submit'
+                        sx={{
+                          backgroundImage:
+                            'linear-gradient( 95deg,rgb(135,35,138) 0%,rgb(33,113,242) 50%,rgb(87,233,233) 100%)',
+                        }}
+                      >
+                        VISIT WEBSITE
+                      </Button>
+                    </a>
+                  </div>
+                </Card>
+              </Box>
+
+                 {/* Telemedicine Screen on XS */}
+
+                 <Box
                 sx={{
                   height: { xs: '40rem', lg: '50rem' },
                   width: '80%',
@@ -1073,7 +1286,6 @@ const Portfolio = () => {
                   </div>
                 </Card>
               </Box>
-
               
             </Grid>
           </Grid>

@@ -24,6 +24,27 @@ const ImageCarousel = () => {
         }}
       >
         <img
+          src='/dapperfades_screen.png'
+          alt='Dapper fades'
+          style={{ width: '10rem', height: '20rem' }}
+        />
+        <Box
+          sx={{
+            boxShadow: '0px 0px 15px 4px rgba(0,0,0,0.50)  !important',
+            width: '5rem',
+            height: '0px',
+            margin: '2rem 0 0 0',
+          }}
+        />
+      </div>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
+      >
+        <img
           src='/whatsup-doc_screen.png'
           alt='Whatsup Doc!'
           style={{ width: '10rem', height: '20rem' }}
@@ -88,48 +109,6 @@ const ImageCarousel = () => {
       >
         <img
           src='phs_screen.png'
-          alt=''
-          style={{ width: '10rem', height: '20rem' }}
-        />
-        <Box
-          sx={{
-            boxShadow: '0px 0px 15px 4px rgba(0,0,0,0.50)  !important',
-            width: '5rem',
-            height: '0px',
-            margin: '2rem 0 0 0',
-          }}
-        />
-      </div>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-        }}
-      >
-        <img
-          src='weather_screen.png'
-          alt=''
-          style={{ width: '10rem', height: '20rem' }}
-        />
-        <Box
-          sx={{
-            boxShadow: '0px 0px 15px 4px rgba(0,0,0,0.50)  !important',
-            width: '5rem',
-            height: '0px',
-            margin: '2rem 0 0 0',
-          }}
-        />
-      </div>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-        }}
-      >
-        <img
-          src='chatrooms_screen.png'
           alt=''
           style={{ width: '10rem', height: '20rem' }}
         />
