@@ -3,7 +3,7 @@ import { Box } from '@mui/system';
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
 import Image from 'next/image';
-import bryan from '/public/bryan.jpg';
+import bryan from '/public/profile.JPG';
 import doctor from '/public/doctor.jpg';
 import developer from '/public/developer.jpg';
 
@@ -149,8 +149,8 @@ const About = () => {
               }}
             />
             <Typography variant='h2'>
-              I am a medical doctor and software developer based in Abuja,
-              Nigeria.
+              I am a medical doctor and software developer living in Middlesbrough,
+              England.
             </Typography>
             <Typography
               variant='h4'
